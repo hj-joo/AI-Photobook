@@ -259,7 +259,7 @@ def main():
                 print(index)
                 image = Image.open(image_file)
                 img = np.array(image)
-                gmaps = googlemaps.Client(key='AIzaSyBJkaawu6GL0WDR33xxKDMj4K1qavLz-6A')
+                gmaps = googlemaps.Client(key='{API_KEY}')
                 index+=1
                 
 
@@ -410,7 +410,7 @@ def main():
         for image_file in image_file:    
                 image = Image.open(image_file)
                 img = np.array(image)
-                gmaps = googlemaps.Client(key='AIzaSyBJkaawu6GL0WDR33xxKDMj4K1qavLz-6A')
+                gmaps = googlemaps.Client(key='{API_KEY}')
                 info = image._getexif()
                 taglabel = {}
                 

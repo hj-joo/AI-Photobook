@@ -134,7 +134,7 @@ for file in file_lst:
     
 
 
-    gmaps = googlemaps.Client(key='AIzaSyBJkaawu6GL0WDR33xxKDMj4K1qavLz-6A')
+    gmaps = googlemaps.Client(key='{API_KEY}')
 
     image = Image.open(path + '/'+file)
 
